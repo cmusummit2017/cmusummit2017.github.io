@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<body>
+<head>
+  <title> CMU Summit On US-CHINA Innovation and Entrepreneruship  </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="CMU SUMMIT Web Service">
+  <meta name="keywords" content="CMU, SUMMIT, CARNEGIE MELLON">
+  <meta name="creator" content = "Zihan Guo">
+  <meta name="designer" content = "Rufeng Ji">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link href="assets/css/reset.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/material-kit.css" rel="stylesheet"/>
+  <link href="assets/css/animate.css" rel="stylesheet"/>
+  <link href="assets/css/summit.css" rel="stylesheet"/>
+</head>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#">Home</a>
+  <a href="conference.html">Conference</a>
+  <a href="competition.html">Venture Competition</a>
+  <a href="jobFair.html">Job Fair</a>
+  <a href="collaborator.html">Collaborators</a>
+  <a href="team.html">Team</a>
+</div>
+
+<div id="main">
+  <div class="landing"> 
+    <div id = "top">
+      <br><br>
+      <span class = "navbutton" onclick="openNav()">&#9776; </span>
+
+    <div  class = "logo">
+      <img src="logo.png" alt="summit logo" align = "middle">
+
+    </div>
+    <h2 class = "blocktext">CMU SUMMIT</h2>
+    <h3 class = "blocktext">US China Innovation and Entrepreneurship</h3>
+    <h2 class = "blocktext">卡内基梅隆中美创新创业峰会</h2><br><br>
+    <h3 class = "blocktext"> April 15 - 16, 2017 </h3>
+    <h3 class = "blocktext"> Pittsburgh, PA, USA </h3><br><br><br>
+
+    <div class = "clock" id="getting-started"></div><br><br><br><br>
+    <!-- <h3 class = "blocktext"> Days &nbsp;&nbsp;   Hrs &nbsp;&nbsp;  Mins </h3> -->
+    <div class = "blocktext"> 
+      <a href="https://www.eventbrite.com/e/6th-cmu-summit-on-us-china-innovation-enterpreneurship-tickets-30364010573?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" 
+      class="button button5" target="_blank"> REGISTER NOW</a>
+      
+    </div>
+    <br><br><br><br><br><br><br><br>
+    </div>
+    <section id="section06" class="demo">
+    <a href="#section07"><span></span></a>
+    </section>
+  </div>
+  
+  <div class = "intro">
+  <br>
+    <h2 id = "section07" class = "redTitle">Who We Are</h2><br>
+
+    <p class = "redParagraph">Founded in 2011, CMU Summit on US-China Innovation and Entreprenuership is a non-profit 
+    student organization that aims to connect innovative ideas between US and China. We not only provide an annual
+    conference and new venture competition, but also host online talks every two weeks. </p> <br>
+
+    <p class = "redParagraph">The topics we cover range
+    from Deep Learning to Biomedical Engineering, from Human Computer Interaction to Virtual/Augmented Reality, 
+    from gazing into the future technology market to building a successful start-up company. Over the past 6 years,
+    we have attracted more than 5,000 participants and 200 industry leaders. But these are just numbers, what we really
+    care about is to connect you with the most talented and passionate individuals you can ever met right here at 
+    Carnegie Mellon University in Pittsburgh, PA. Come and join us on April 15th, 2017.</p><br>
+
+
+    <a href="http://cmu-summit.org/past" class = "button button5" 
+      target = "_blank">View Past CMU Summit
+    </a><br><br>
+  <br>
+  <br>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <nav class="pull-left">
+        <a href="#top">Back to Top</a></li>
+      </nav>
+      <div align="center">
+        Copyright &copy; 2011-2017 CMU SUMMIT. All rights reserved. For more information
+        please contact <a href="mailto:cmusummit2017@gmail.com?Subject=Hello" target="_top">cmusummit2017@gmail.com</a>
+            <!--begin social icons -->
+            <ul class="social">
+              <li><a target="_blank" href="https://twitter.com/summit_cmu"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/cmu_summit/"><i class="fa fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/cmusummit2016/"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/groups/12026932"><i class="fa fa-linkedin"></i></a></li>
+              <li><a target="_blank" href="https://liaoyuan.io/team/57903d48513d1a002ffe3ba5">燎原</a></li>
+            </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script>
+var state = 0;
+function openNav() {
+    if (state == 0) {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      state = 1;
+    }
+    else if (state == 1){
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.position = "fixed";
+      document.getElementById("main").style.marginLeft= "0";
+      state = 0;
+    }
+    
+}
+</script>
+
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/countdown-js.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $("#getting-started")
+  .countdown("2017/04/15", function(event) {
+    $(this).text(
+      event.strftime('%D Days  %H Hrs %M Mins')
+    );
+  });
+</script>
+
+<script>
+  $(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });
+</script>
+
+     
+</body>
+</html> 
+
+
